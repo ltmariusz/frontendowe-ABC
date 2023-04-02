@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+body{
+    background-color: #006eff31;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    /* margin-left: 1rem; */
+    background-color: #d1d1d1;
+    border-bottom-style: solid;
+}
+
+.codeTitle{
+    margin: 1rem 0rem 0rem 0rem;
+    background-color:#a3a3a3 ;
+    border-style: solid;
+    border-width: 2px 2px 0rem 2px ;
+    padding-left: 0.5rem;
+    font-weight: 900;
+}
+.code{
+    padding: 0.5rem;
+    border-style:dotted;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    border-style: solid;
+    border-width: 0.15rem;
+}

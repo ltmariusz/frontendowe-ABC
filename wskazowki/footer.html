@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <link href="/style.css" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0
+        }
+
+        footer {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+            background-color: gray;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="../index.html">&lt;--</a> Jak zrobić Footer</h1>
+    <section class="content">
+        <p> Aby zrobić footer pływający najlepiej użyć funkcji <b>position:fixed</b>
+            która umożliwia "przyklejenie" do aktualnie widzanego obszaru. Do tego
+            należy dodać <b>szerokość obiektu na 100%</b>, oraz <b>pozycjonowanie na samym dole</b> a jeśli chcemy żeby
+            była na środku to musimy dodać jeszcze wycentrowanie
+        </p>
+        <p class="codeTitle">KOD</p>
+        <p class="code">
+            *{<br />
+            margin:0<br />
+            }<br />
+            <br />
+            {<br />
+            position:fixed;<br />
+            width: 100%;<br />
+            bottom: 0;<br />
+            text-align: center;<br />
+            }
+        </p>
+    </section>
+    <footer>To jest stopka</footer>
+</body>
+
+</html>
