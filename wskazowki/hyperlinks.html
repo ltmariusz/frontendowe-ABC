@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+    <link href="../style.css" rel="stylesheet" />
+
+    <style>
+        a#cwiczenie {
+            padding-top: 0.5rem;
+        }
+
+        a:link#cwiczenie {
+            color: red;
+        }
+
+        a:visited#cwiczenie {
+            color: green;
+        }
+
+
+        a:hover#cwiczenie {
+            color: hotpink;
+        }
+/*  */
+
+        a:active#cwiczenie {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="../index.html">&lt;--</a> Jak ostylować hiperłącza</h1>
+    <section class="content">
+        <p>
+            Standardowo hiperłącza mają wbudowane ostylowanie.
+            Cztery podstawowe stany to:
+        <ul>
+            <li>a:link - normalny nie odwiedzony link</li>
+            <li>a:visited - link, który użytkownik odwiedził</li>
+            <li>a:hover - link, gdy użytkownik najedzie na niego myszką</li>
+            <li>a:active - link w momencie kliknięcia</li>
+        </ul>
+        </p>
+        <h3 style="color: red">UWAGA!</h3>
+        <p>
+            Podczas ustawiania stylu dla kilku stanów łącza obowiązują pewne zasady dotyczące kolejności:
+        <ul>
+            <li>a:hover MUSI następować po a:link i a:visited</li>
+            <li>a:active MUSI wystąpić po a:hover</li>
+        </ul>
+        </p>
+        <p class="codeTitle">KOD</p>
+        <div class="code"> 
+            <p class="comment">/* 
+            #cwiczenie oznacza że ostylowany został znacznik 'a' o 'id' równym 'cwiczenie', ten link znajduje się pod przykładowym kodem <br/>
+            */ </p>
+            a:link#cwiczenie { <br/>
+                color: red; <br/>
+            } <br/>
+            <br/>
+            a:visited#cwiczenie { <br/>
+                color: green; <br/>
+            } <br/>
+            <br/>
+            a:hover#cwiczenie { <br/>
+                color: hotpink; <br/>
+            } <br/>
+            <br/>
+            a:active#cwiczenie { <br/>
+                color: rgb(255, 255, 255);<br/>
+            } 
+        </div>
+
+        <a href="hyperlinks.html" id="cwiczenie">Ostylowany link</a>
+
+    </section>
+</body>
+
+</html>
