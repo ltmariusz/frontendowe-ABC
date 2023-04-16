@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../style.css" rel="stylesheet"/>
+    <link href="../style.css" rel="stylesheet" />
     <title>Object Promise</title>
 </head>
+
 <body>
     <h1><a href="../index.html">&lt;--</a>Object Promise</h1>
     <section class="content">
         <p>
-           Aby programować asynchronicznie można skorzystać z obiekty Promise <br/>
-            Argumentem koncrutkotra (constructor) klasy Promise, jest inna funkcja (zdefiniowana przez nas)<br/>
+            Aby programować asynchronicznie można skorzystać z obiekty Promise <br />
+            Argumentem koncrutkotra (constructor) klasy Promise, jest inna funkcja (zdefiniowana przez nas)<br />
+        </p>
+        <h3 style="color: red">UWAGA!</h3>
 
-           <br/>
+        <br />
         <p class="codeTitle">KOD</p>
         <p class="code">
             new Promoise
         </p>
     </section>
     <script>
-        let obiektPromise = new Promise( ()=> {
+        setTimeout(() => {
+            console.log("timeout")
+        })
+        // let obiektPromise = new Promise(() => {
+        //     console.log("promise")
+        // }).then(()=>{
+        //     console.log("then")
+        // }) 
+        let obiektPromise2 = new Promise(() => {
+            console.log("test Promise 2")
+        })
 
-        }) 
+        obiektPromise2.then(() => {
+            console.log("then promise 2")
+        })
+        console.log("poza promisem")
     </script>
 </body>
+
 </html>
