@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+    <link href="../style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <h1><a href="../index.html">&lt;--</a>setTimeout</h1>
+    <section class="content">
+        <p>
+            Jedna z funkcji służącej do wywyływania funkcji asynchronicznie jest funkcja setTimeout.
+            Pozwala ona wykonać pewne rozkazy po określonym czasie.
+            Najczęściej korzysta się do tego z funkcji strzałkowej, a następnie po przecinku można dołożyć liczbę milisekun po której funkcja ma się wykonać
+        </p>
+        <br />
+        <p class="codeTitle">KOD</p>
+        <p class="code">
+            setTimeout( () => { <br/>
+                console.log("test") <br/>
+            }, 1000)
+        </p>
+    </section>
+    <script>
+        setTimeout( () => { 
+            console.log("test") 
+        }, 10000)
+    </script>
+</body>
+
+</html>
