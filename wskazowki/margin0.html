@@ -20,12 +20,25 @@
     <section class="content">
         <p>
             Domyślnie strona posiada pare wbudowanych właściwości <br />
-            między innymi margines który można wyłączyć w taki sposób
+            aby edytować style w całej stronie można skorzystać ze znacznika <br/>
+            gwiazdki "*" między innymi margines, który można wyłączyć w taki sposób:
         </p>
         <br />
         <p class="codeTitle">KOD</p>
         <p class="code">
             *{<br />
+            margin:0<br />
+            }
+        </p>
+        <br/>
+        <p>
+            Wyłączy to wszystkie domyślne marginesy nawet w znacznikach nagłówkowych h1, h2 itd. <br />
+            Jeżeli chcesz usunąć tylko marginesy z głównej strony nie wpływając na inne znaczniki można usunąć <br />
+            marginesy w znaczniku "body"
+        </p>
+        <p class="codeTitle">KOD</p>
+        <p class="code">
+            body{<br />
             margin:0<br />
             }
         </p>

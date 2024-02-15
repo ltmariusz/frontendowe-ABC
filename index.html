@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" />
-    <title>Zbieranina małych wskazówek</title>
+    <title>frontendowe-ABC</title>
 
 </head>
 
 <body>
-    <h1>Zbieranina małych wskazówek Html/CSS/JS</h1>
+    <h1>frontendowe-ABC</h1>
+    <!-- <p>Zbieranina małych wskazówek Html/CSS/JS</p> -->
     <section class="content">
         <!-- <nav> -->
         <ul class="menu">
@@ -48,3 +49,26 @@
 </body>
 
 </html>
+
+<!-- 
+showSendedContact(id: number) {
+    let i = 0;
+    this.ankietaRest.getAnkietaIdContact(id).subscribe({
+      next: (response) => {
+        console.log(i);
+        console.log(response.body);
+        this.listOfSendenContactToPrivate = new Array();
+        for (let i = 0; i < response.body!.length; i++) {
+          console.log(i);
+          const element = response.body![i].value;
+          this.listOfSendenContactToPrivate.push(element);
+        }
+      }, error: (errorResponse) => {
+        console.error(errorResponse);
+        this.listOfSendenContactToPrivate = [""];
+      }, complete: () => {
+        console.log(this.listOfSendenContactToPrivate);
+        return this.listOfSendenContactToPrivate;
+      }
+    });
+  } -->
