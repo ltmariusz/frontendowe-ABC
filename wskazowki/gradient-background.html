@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient-background</title>
+    <link href="../style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <h1><a href="../index.html">&lt;--</a>Gradientowy kolor tła</h1>
+    <section class="content">
+        <p>
+            Gradient pozwala na płynne przejście między dwoma lub więcej kolorami.<br /> <br />
+        </p>
+        <h3>Rodzaje gradientów</h3>
+        <p>
+            W CSS możesz używać dwóch głównych typów gradientów: <br />
+        </p>
+        <p>
+
+            <li>
+                <span style="font-weight: bold;"> Linear Gradient (Gradient liniowy)</span> - Przejście kolorów odbywa
+                się
+                wzdłuż linii w określonym kierunku. <br />
+            </li>
+        </p>
+
+
+        <p class="codeTitle">KOD</p>
+        <p class="code">
+            background:{<br />
+            <span style="color:lightgreen">//linear-gradient(direction, color-stop1, color-stop2, ...)</span><br />
+            background: linear-gradient(to right, red, yellow);
+            }
+        </p>
+        <p>
+            <br />
+        <ul>
+            <li><u>direction</u> (opcjonalnie) określa kierunek przejścia gradientu. Może być to kąt
+                (np. 45deg) lub kierunek (np. to right). Jeśli nie zostanie określony, domyślnie
+                jest to to bottom (od góry do dołu),</li>
+            <li><u>color-stop</u> to kolory, które chcesz użyć w przejściu. Możesz określić dowolną liczbę kolorów.</li>
+        </ul>
+        </p>
+        <p>
+            <br />
+            <li>
+                <span style="font-weight: bold;">Radial Gradient (Gradient promienisty) </span>- Przejście kolorów
+                odbywa
+                się promieniście od jednego punktu do krawędzi.
+                <br />
+            </li>
+        </p>
+        <p class="codeTitle">KOD</p>
+        <p class="code">
+            background:{<br />
+            <span style="color:lightgreen">//background: radial-gradient(shape size at position, start-color, ...,
+                last-color);
+            </span><br />
+            background: radial-gradient(circle, red, yellow, green);
+            }
+        </p>
+        <br/>
+        <ul>
+            <li>
+                <u>direction</u> (opcjonalnie) określa kierunek przejścia gradientu. Może być to kąt (np. 45deg) lub kierunek (np. to right). Jeśli nie zostanie określony, domyślnie jest to to bottom (od góry do dołu),
+            </li>
+            <li>
+                <u>color-stop</u>  to kolory, które chcesz użyć w przejściu. Możesz określić dowolną liczbę kolorów.
+            </li>
+        </ul>
+        <br />
+
+    </section>
+</body>
+
+</html>
