@@ -14,7 +14,7 @@ h1 {
     margin-bottom: 2rem;
     padding: 1rem;
     /* margin-left: 1rem; */
-    background-color: #d1d1d1;
+    background-color: #B9F6DC;
     border-bottom-style: solid;
 }
 
@@ -54,7 +54,7 @@ h1 {
 }
 
 .content {
-    background-color: #375E97;
+    background-color: #E8FEF5;
     display: flex;
     flex-direction: column;
     margin: 1rem;
