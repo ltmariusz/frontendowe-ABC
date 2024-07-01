@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="../style.css" rel="stylesheet" />
+      <title>Zmienne-Css</title>
+    </head>
+  </head>
+  <body>
+    <h1><a href="../index.html">&lt;--</a>Zmienne CSS</h1>
+    <section class="content">
+      Zmienne pozwalają przechowywać pewne informacje, które możemy wykorzystać
+      poźniejszym czasie, odnosić się do nich. Dobrym pomysłem jest zapisywanie
+      kolorów, wielkości np. czcionek, grubości ramek itd.
+      <p class="codeTitle">KOD</p>
+      <p class="code">
+        <span style="color: lightskyblue">&ltstyle></span> <br />
+        <br />
+        <span style="color: lightgreen">// Inicjowanie zmiennej</span> <br />
+        :root { <br />
+        --textSize: 80px;<br />
+        }
+        <br />
+        <br />
+        <span style="color: lightgreen">// Wykorzystanie zmiennej</span> <br />
+        p{<br />
+        font-size: var(---textSize) <br />
+        }<br />
+        <br />
+        <span style="color: lightskyblue"> &lt/style></span><br />
+      </p>
+    </section>
+  </body>
+</html>
