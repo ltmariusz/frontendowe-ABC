@@ -1,3 +1,6 @@
+<!-- Listy - Wyłączanie dekoracji np kropek -->
+<!-- list-style: none -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,32 +9,40 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link href="../style.css" rel="stylesheet" />
-      <title>Zmienne-Css</title>
+      <title>Listy - Wyłączanie dekoracji np kropek</title>
+      <style>
+        li {
+          list-style: none;
+        }
+      </style>
     </head>
   </head>
   <body>
-    <h1><a href="../index.html">&lt;--</a>Zmienne CSS</h1>
+    <h1>
+      <a href="../index.html">&lt;--</a>Listy - Wyłączanie dekoracji (np.
+      kroopek)
+    </h1>
     <section class="content">
-      Zmienne pozwalają przechowywać pewne informacje, które możemy wykorzystać
-      poźniejszym czasie, odnosić się do nich. Dobrym pomysłem jest zapisywanie
-      kolorów, wielkości np. czcionek, grubości ramek itd.
+      Czasami chcemy skorzystać z funkcji listy ale nie chcemy korzystać z
+      natywnie tworzonych kropek.
       <p class="codeTitle">KOD</p>
       <p class="code">
         <span style="color: lightskyblue">&ltstyle></span> <br />
         <br />
         <span style="color: lightgreen">// Inicjowanie zmiennej</span> <br />
-        http { /* mozna tez dac :root w przypadku zmiennych */ <br />
-        --textSize: 80px;<br />
-        }
-        <br />
-        <br />
-        <span style="color: lightgreen">// Wykorzystanie zmiennej</span> <br />
-        p{<br />
-        font-size: var(---textSize) <br />
-        }<br />
-        <br />
+        li{<br />
+        list-style: none <br />
+        } <br />
         <span style="color: lightskyblue"> &lt/style></span><br />
       </p>
+      <br />
+
+      Przykładowa lista <br />
+      <ul>
+        <li>Wiersz 1</li>
+        <li>Wiersz 2</li>
+        <li>Wiersz 3</li>
+      </ul>
     </section>
   </body>
 </html>
