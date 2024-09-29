@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch Pobieranie danych z bazy danych</title>
+    <link href="../style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <h1><a href="../index.html">&lt;--</a>fetch (pobieranie danych z bazydanych)</h1>
+    <section class="content">
+        <p>
+            fetch() to funkcja która pozwala pobierać elementy z baz danych w javascript.
+            W funkcji wpisujemy adres z którego mamy pobrać elementy.
+            Nastęnie można zrobić jeszcze wiele rzeczy (in progress)
+        </p>
+        <br/>
+        <p class="codeTitle">KOD</p>
+        <p class="code">
+            fetch(endpoint).then((respone) => { </br>
+                if (respone.ok) {</br>
+                  respone.json().then((data) => {</br>
+                    console.log(data);</br>
+                  });</br>
+                }</br>
+              });</br>
+        </p>
+    </section>
+    <script>
+
+    </script>
+</body>
+
+</html>

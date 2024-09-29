@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExp Wyrażenia regularne</title>
+    <link href="../style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <h1><a href="../index.html">&lt;--</a>RegExp Wyrażenia regularne</h1>
+    <section class="content">
+        <p>
+            Wyrażenia regularne to schemat służący do opisu i wyszukiwania konkretnego ciągu znaków w tekście.</br>
+            Zdecydowanie więcej przeczytasz tutaj:</br>
+            <a>https://miroslawmamczur.pl/wyrazenia-regularne-czym-sa-i-jak-pisac-wlasne-regexy/</a>
+        </p>
+        <br/>
+        <p class="codeTitle">KOD</p>
+        <p class="code">
+            <span style="color: lightgreen">//tworzymy wyrażenie regularne</span> </br>
+            <span style="color: lightgreen">//g: przeszukuje cały element nie zatrzymując się na pierwszym dopasowaniu</span> </br>
+            <span style="color: lightgreen">//i: znajdzie element bez względu na wielkość liter</span> </br>
+            let regexp = new RegExp("rower", "gi");</br>
+    
+            <span style="color: lightgreen"> //tak wyszukuje się elementy</span></br>
+            <span style="color: lightgreen"> //spawdzamy tablice obiektów</span></br>
+            let newTab = cities.filter((findElement) => {</br>
+                <span style="color: lightgreen"> //obiekt posiada element "city"</span></br>
+                <span style="color: lightgreen"> //funkcja match pozwala odnaleźć elementy które pasują do wyrażenia regularnego</span></br>
+              return findElement.city.match(regexp);</br>
+            });</br>
+        </p>
+    </section>
+    <script>
+
+    </script>
+</body>
+
+</html>
